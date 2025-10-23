@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option go_package = "grpc-sandbox/collector";
+
+package collector;
+
+import "google/protobuf/struct.proto";
+import "google/protobuf/wrappers.proto";
+
+message Event {
+  string event_id = 1;
+  string event_name = 2;
+  google.protobuf.Struct event_metadata = 3;
+  uint64 timestamp = 4;
+}
+
+service Collector {
+  rpc LogEvent(Event) returns (google.protobuf.BoolValue) {}
+}

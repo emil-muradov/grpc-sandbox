@@ -3,6 +3,7 @@ module grpc-sandbox
 go 1.25.3
 
 require (
+	github.com/joho/godotenv v1.5.1
 	go.mongodb.org/mongo-driver/v2 v2.3.1
 	google.golang.org/grpc v1.76.0
 	google.golang.org/protobuf v1.36.10
@@ -10,7 +11,6 @@ require (
 
 require (
 	github.com/golang/snappy v1.0.0 // indirect
-	github.com/joho/godotenv v1.5.1 // indirect
 	github.com/klauspost/compress v1.16.7 // indirect
 	github.com/xdg-go/pbkdf2 v1.0.0 // indirect
 	github.com/xdg-go/scram v1.1.2 // indirect

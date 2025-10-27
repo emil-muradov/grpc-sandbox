@@ -1,0 +1,3 @@
+### GRPC SANDBOX
+
+An experimental gRPC project exploring capabilities of the technology. The architecture consists of multiple client services (authentication and purchase) that send events to a centralized collector service using unary RPC calls. The collector service aggregates these events and stores them in MongoDB (though Elasticsearch would be a better fit for production environments requiring advanced event storage and querying capabilities).
